@@ -327,3 +327,23 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+
+
+.btn-header {
+    background-color: rgba(220, 29, 26, 0.8);
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    
+.btn-header:hover {
+    background-color: rgb(220, 29, 26);
+}
+
+@media (max-width: 767px) {
+    .btn-header {
+        width: 200px;
+    }
+  }
