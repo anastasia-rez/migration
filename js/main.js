@@ -54,3 +54,23 @@
     
 })(jQuery);
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var showDetailsBtns = document.querySelectorAll(".showDetailsBtn");
+
+    showDetailsBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            var detailsDiv = btn.parentElement.querySelector(".details");
+            var detailsVisible = window.getComputedStyle(detailsDiv).maxHeight !== "0px";
+
+            if (!detailsVisible) {
+                detailsDiv.style.maxHeight = detailsDiv.scrollHeight + "px";
+                btn.textContent = "↑";
+            } else {
+                detailsDiv.style.maxHeight = "0";
+                btn.textContent = "↓";
+            }
+        });
+    });
+});
