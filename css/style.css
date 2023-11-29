@@ -377,8 +377,6 @@
   }
 
 
-
-
   .details {
     max-height: 0;
     overflow: hidden;
@@ -743,3 +741,16 @@
 }
 
 
+.img-bg {
+    width: 25rem;
+}
+
+@media (max-width: 767px) {
+    .img-bg {
+        width: 17rem;
+    }
+}
+
+.main-container {
+    width: 90%;
+}
