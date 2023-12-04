@@ -200,7 +200,7 @@
 }
 
 
-/*** Service ***/
+/*** почему мы ***/
 .service-item .btn {
     position: absolute;
     right: -50px;
@@ -222,7 +222,11 @@
     margin-top: 150px;
 }
 
-/*** Team ***/
+.service-item {
+    height: 350px;
+}
+
+/* ** Team **
 .team-item .team-img::before,
 .team-item .team-img::after {
     position: absolute;
@@ -274,10 +278,10 @@
 .team-item .team-social .btn:hover {
     color: #FFFFFF;
     background: var(--primary);
-}
+} */
 
 
-/*** Testimonial ***/
+/*** страны ***/
 .testimonial-carousel {
     max-width: 700px;
     margin: 0 auto;
@@ -334,6 +338,7 @@
         height: 100px;
     }
 }
+
 
 /*** Footer ***/
 .footer .btn.btn-link {
@@ -397,7 +402,7 @@
   }
 
 
-  .details {
+.details {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out; /* Длительность и функция анимации */
@@ -435,7 +440,16 @@
     border: none; 
     background-color: red;
     border-radius: 8px;
+
+    box-sizing: border-box; /* Учитываем padding и border в общей ширине элемента */
 }
+
+/* Добавляем медиа-запрос для более крупных экранов, если нужно ограничить максимальную ширину кнопки */
+@media (max-width: 767px) {
+    .btn-header-shine {
+        width: 100%;
+    }
+  }
 
 .btn-shine {
     background: linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.5) 55%, transparent 55%);
@@ -773,6 +787,43 @@
 
 .main-container {
     width: 90%;
+}
+
+
+
+
+
+.quote-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+}
+.quote {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d9534f; /* Красный цвет Bootstrap */
+    margin-bottom: 20px;
+}
+.author-container {
+    display: flex;
+    align-items: center;
+}
+.author-info {
+    margin-left: 15px;
+    font-size: 18px;
+}
+.author-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
