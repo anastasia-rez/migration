@@ -231,7 +231,7 @@
     width: 90%;
 } */
 
-.team-item .team-img::before,
+/* .team-item .team-img::before,
 .team-item .team-img::after {
     position: absolute;
     content: "";
@@ -241,7 +241,7 @@
     left: 0;
     background: rgba(0, 0, 0, .85);
     transition: .5s;
-}
+} */
 
 .team-item .team-img::after {
     left: auto;
