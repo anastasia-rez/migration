@@ -390,7 +390,7 @@
     color: var(--primary);
 }
 
-
+/* header */
 
 .btn-header {
     background-color: rgba(220, 29, 26, 0.8);
@@ -422,25 +422,6 @@
 }
 
 
-/* .btn-blink {
-    background-color: #ff0000;
-    color: #ffffff; 
-    animation: blink 2s infinite; 
-}
-
-
-@keyframes blink {
-    0% {
-        opacity: 1; 
-    }
-    50% {
-        opacity: 0.5; 
-    }
-    100% {
-        opacity: 1; 
-    }
-} */
-
 .btn-header-shine {
     background: linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.5) 55%, transparent 55%);
     background-size: 200% 200%;
@@ -450,10 +431,9 @@
     background-color: red;
     border-radius: 8px;
 
-    box-sizing: border-box; /* Учитываем padding и border в общей ширине элемента */
+    box-sizing: border-box; 
 }
 
-/* Добавляем медиа-запрос для более крупных экранов, если нужно ограничить максимальную ширину кнопки */
 @media (max-width: 767px) {
     .btn-header-shine {
         width: 100%;
@@ -486,11 +466,10 @@
 }
 
 .btn-shine a {
-    /* margin: auto; */
+
     text-decoration: none;
     color: #fff;
-    /* font-size: 24px; */
-    /* display: block; */
+
 }
 
 .btn-shine-whatsapp {
@@ -678,35 +657,6 @@
     color: #fff; /* Цвет текста остается белым */
 }
 
-/* словакия */
-.page-header-slovakia {
-    background-image: url('/img/словакия-фон.jpg'); /* Задаем картинку на фон */
-    background-size: cover; /* Растягиваем фон на всю ширину и высоту контейнера */
-    background-repeat: no-repeat; /* Отключаем повторение фона */
-    background-position: center center; /* Центрируем фон */
-    height: 500px;
-    position: relative;
-}
-
-.page-header-slovakia::before {
-    content: ""; /* Создаем псевдоэлемент для наложения фильтра */
-    position: absolute; /* Позиционируем псевдоэлемент */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Цвет фильтра (серый с прозрачностью) */
-    z-index: 1; /* Поднимаем фильтр над текстом */
-}
-
-.page-header-slovakia .container {
-    position: relative; /* Устанавливаем позиционирование для контейнера с текстом */
-    z-index: 2; /* Помещаем текст над фильтром */
-}
-
-.page-header-slovakia h1 {
-    color: #fff; /* Цвет текста остается белым */
-}
 
 /* сша */
 .page-header-usa {
@@ -735,6 +685,67 @@
 }
 
 .page-header-usa h1 {
+    color: #fff; /* Цвет текста остается белым */
+}
+
+/* украина */
+.page-header-ukraine {
+    background-image: url('/img/украина-фон.jpg'); /* Задаем картинку на фон */
+    background-size: cover; /* Растягиваем фон на всю ширину и высоту контейнера */
+    background-repeat: no-repeat; /* Отключаем повторение фона */
+    background-position: center center; /* Центрируем фон */
+    height: 500px;
+    position: relative;
+}
+
+.page-header-ukraine::before {
+    content: ""; /* Создаем псевдоэлемент для наложения фильтра */
+    position: absolute; /* Позиционируем псевдоэлемент */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Цвет фильтра (серый с прозрачностью) */
+    z-index: 1; /* Поднимаем фильтр над текстом */
+}
+
+.page-header-ukraine .container {
+    position: relative; /* Устанавливаем позиционирование для контейнера с текстом */
+    z-index: 2; /* Помещаем текст над фильтром */
+}
+
+.page-header-ukraine h1 {
+    color: #fff; /* Цвет текста остается белым */
+}
+
+
+/* польша гражданство */
+.page-header-polandCitizenship {
+    background-image: url('/img/польша-гражданство.jpg'); /* Задаем картинку на фон */
+    background-size: cover; /* Растягиваем фон на всю ширину и высоту контейнера */
+    background-repeat: no-repeat; /* Отключаем повторение фона */
+    background-position: center center; /* Центрируем фон */
+    height: 500px;
+    position: relative;
+}
+
+.page-header-polandCitizenship::before {
+    content: ""; /* Создаем псевдоэлемент для наложения фильтра */
+    position: absolute; /* Позиционируем псевдоэлемент */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Цвет фильтра (серый с прозрачностью) */
+    z-index: 1; /* Поднимаем фильтр над текстом */
+}
+
+.page-header-polandCitizenship .container {
+    position: relative; /* Устанавливаем позиционирование для контейнера с текстом */
+    z-index: 2; /* Помещаем текст над фильтром */
+}
+
+.page-header-polandCitizenship h1 {
     color: #fff; /* Цвет текста остается белым */
 }
 
@@ -785,7 +796,7 @@
 
 
 .img-bg {
-    width: 25rem;
+    width: 27rem;
 }
 
 @media (max-width: 767px) {
