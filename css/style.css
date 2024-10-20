@@ -848,3 +848,57 @@
 }
 
 
+/* израиль */
+
+.benefits-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.benefits-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.benefits-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.passport-image {
+    max-width: 200px;
+    margin: 20px;
+}
+
+.passport-image img {
+    width: 100%;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.benefit-item i {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #6c757d;
+}
+
+.benefit-item p {
+    font-size: 1.2rem;
+    margin: 0;
+}
