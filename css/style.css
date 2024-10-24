@@ -568,126 +568,8 @@
     color: #fff; /* Цвет текста остается белым */
 }
 
-/* венгрия */
-.page-header-hungary {
-    background-image: url('/img/венгрия-фон.jpg'); /* Задаем картинку на фон */
-    background-size: cover; /* Растягиваем фон на всю ширину и высоту контейнера */
-    background-repeat: no-repeat; /* Отключаем повторение фона */
-    background-position: center center; /* Центрируем фон */
-    height: 500px;
-    position: relative;
-}
-
-.page-header-hungary::before {
-    content: ""; /* Создаем псевдоэлемент для наложения фильтра */
-    position: absolute; /* Позиционируем псевдоэлемент */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Цвет фильтра (серый с прозрачностью) */
-    z-index: 1; /* Поднимаем фильтр над текстом */
-}
-
-.page-header-hungary .container {
-    position: relative; /* Устанавливаем позиционирование для контейнера с текстом */
-    z-index: 2; /* Помещаем текст над фильтром */
-}
-
-.page-header-hungary h1 {
-    color: #fff; /* Цвет текста остается белым */
-}
-
-/* польша */
-.page-header-poland {
-    background-image: url('/img/польша-фон.jpg'); /* Задаем картинку на фон */
-    background-size: cover; /* Растягиваем фон на всю ширину и высоту контейнера */
-    background-repeat: no-repeat; /* Отключаем повторение фона */
-    background-position: center center; /* Центрируем фон */
-    height: 500px;
-    position: relative;
-}
-
-.page-header-poland::before {
-    content: ""; /* Создаем псевдоэлемент для наложения фильтра */
-    position: absolute; /* Позиционируем псевдоэлемент */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Цвет фильтра (серый с прозрачностью) */
-    z-index: 1; /* Поднимаем фильтр над текстом */
-}
-
-.page-header-poland .container {
-    position: relative; /* Устанавливаем позиционирование для контейнера с текстом */
-    z-index: 2; /* Помещаем текст над фильтром */
-}
-
-.page-header-poland h1 {
-    color: #fff; /* Цвет текста остается белым */
-}
-
-/* литва */
-.page-header-lithuania {
-    background-image: url('/img/литва-фон.jpg'); /* Задаем картинку на фон */
-    background-size: cover; /* Растягиваем фон на всю ширину и высоту контейнера */
-    background-repeat: no-repeat; /* Отключаем повторение фона */
-    background-position: center center; /* Центрируем фон */
-    height: 500px;
-    position: relative;
-}
-
-.page-header-lithuania::before {
-    content: ""; /* Создаем псевдоэлемент для наложения фильтра */
-    position: absolute; /* Позиционируем псевдоэлемент */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Цвет фильтра (серый с прозрачностью) */
-    z-index: 1; /* Поднимаем фильтр над текстом */
-}
-
-.page-header-lithuania .container {
-    position: relative; /* Устанавливаем позиционирование для контейнера с текстом */
-    z-index: 2; /* Помещаем текст над фильтром */
-}
-
-.page-header-lithuania h1 {
-    color: #fff; /* Цвет текста остается белым */
-}
 
 
-/* сша */
-.page-header-usa {
-    background-image: url('/img/сша-фон.jpg'); /* Задаем картинку на фон */
-    background-size: cover; /* Растягиваем фон на всю ширину и высоту контейнера */
-    background-repeat: no-repeat; /* Отключаем повторение фона */
-    background-position: center center; /* Центрируем фон */
-    height: 500px;
-    position: relative;
-}
-
-.page-header-usa::before {
-    content: ""; /* Создаем псевдоэлемент для наложения фильтра */
-    position: absolute; /* Позиционируем псевдоэлемент */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Цвет фильтра (серый с прозрачностью) */
-    z-index: 1; /* Поднимаем фильтр над текстом */
-}
-
-.page-header-usa .container {
-    position: relative; /* Устанавливаем позиционирование для контейнера с текстом */
-    z-index: 2; /* Помещаем текст над фильтром */
-}
-
-.page-header-usa h1 {
-    color: #fff; /* Цвет текста остается белым */
-}
 
 /* украина */
 .page-header-ukraine {
@@ -871,12 +753,12 @@
 }
 
 .page-header-israel .container {
-    position: relative; /* Устанавливаем позиционирование для контейнера с текстом */
-    z-index: 2; /* Помещаем текст над фильтром */
+    position: relative; 
+    z-index: 2; 
 }
 
 .page-header-israel h1 {
-    color: #fff; /* Цвет текста остается белым */
+    color: #fff;
 }
 
 .img-document {
