@@ -850,55 +850,31 @@
 
 /* израиль */
 
-.benefits-section {
-    text-align: center;
-    padding: 50px 20px;
+.page-header-israel {
+    background-image: url('/img/израиль-основв.jpg'); /* Задаем картинку на фон */
+    background-size: cover; /* Растягиваем фон на всю ширину и высоту контейнера */
+    background-repeat: no-repeat; /* Отключаем повторение фона */
+    background-position: center center; /* Центрируем фон */
+    height: 500px;
+    position: relative;
 }
 
-.benefits-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-}
-
-.benefits-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.benefits-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    max-width: 600px;
-    margin: 20px;
-}
-
-.passport-image {
-    max-width: 200px;
-    margin: 20px;
-}
-
-.passport-image img {
+.page-header-israel::before {
+    content: ""; /* Создаем псевдоэлемент для наложения фильтра */
+    position: absolute; /* Позиционируем псевдоэлемент */
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Цвет фильтра (серый с прозрачностью) */
+    z-index: 1; /* Поднимаем фильтр над текстом */
 }
 
-.benefit-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.page-header-israel .container {
+    position: relative; /* Устанавливаем позиционирование для контейнера с текстом */
+    z-index: 2; /* Помещаем текст над фильтром */
 }
 
-.benefit-item i {
-    font-size: 2rem;
-    margin-right: 15px;
-    color: #6c757d;
-}
-
-.benefit-item p {
-    font-size: 1.2rem;
-    margin: 0;
+.page-header-israel h1 {
+    color: #fff; /* Цвет текста остается белым */
 }
