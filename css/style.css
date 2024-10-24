@@ -878,3 +878,8 @@
 .page-header-israel h1 {
     color: #fff; /* Цвет текста остается белым */
 }
+
+.img-document {
+    width: 200px;
+    height: 220px;
+}
